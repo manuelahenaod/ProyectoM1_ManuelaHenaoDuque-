@@ -36,12 +36,33 @@
 }
 
 .main { 
+    width: auto;
     display: flex;
+    justify-content: center;
+
  }
 
-.imagen_principal {
-    width: 100px;
-    height: 100px;
+select, button{
+  margin: 10px;
+  padding: 5px;
 }
 
-.footer { grid-area: footer; }
+.imagen_principal {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.color {
+  width: 150px;
+  height: 
+  50px;
+  margin: 5px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+}
