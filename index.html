@@ -13,23 +13,31 @@
             <img class="logo" src="/images/favicon.png" alt="logo">
             <p class="logo_texto">Colorfly Studio</p>
         </div>
+
         <div class="main">
-            <div class="botones">
-                <h1>Creador de Paletas</h1>
-                <p>Selecciona el tamaño de la paleta</p>
-                <div class="seleccionador_tamaño">
-                    <button>6</button>
-                    <button>8</button>
-                    <button>9</button>
-                </div>
+
+            <label for="cantidad">Selecciona el tamaño de la paleta:</label>
+                 <select id="cantidad">
+                    <option value="6">6 colores</option>
+                    <option value="8">8 colores</option>
+                    <option value="9">9 colores</option>
+                </select>
+
+            <label for="formato">Formato:</label>
+                <select id="formato">
+                    <option value="hsl">HSL</option>
+                    <option value="hex">HEX</option>   
+                </select>
+
+
                 <button>Crear paleta</button>
-            </div>
+        </div>
             <img class="imagen_principal" src="images/imagen main.png" alt="imagen-principal">
         </div>
 
 
 
-        <div class="footer">3</div>
+        <div class="footer"> </div>
     </section>
     <script src="index.js"></script>
 </body>
