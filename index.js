@@ -22,6 +22,19 @@ boton.addEventListener("click", function() {
   fila.style.backgroundColor = color;  //permite ver el color de fondo
   fila.textContent = color;  // permite ver el código del color
 
+  switch(Number(cantidad)) {
+    case 6:
+      fila.style.height = "80px";
+      break;
+
+    case 8:
+      fila.style.height = "60px";
+      break;
+
+    case 9:
+      fila.style.height = "53px";
+      break;
+  }
   
   paleta.appendChild(fila); //mete la fila de color en el contenedor principal
   }
