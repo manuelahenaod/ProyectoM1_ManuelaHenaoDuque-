@@ -60,6 +60,7 @@
 .imagen_principal {
     width: 300px;
     height: 200px;
+    display: block;
 }
 
 #crear {
@@ -142,12 +143,13 @@
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
 
 .fila {
-  width: 50%;
+  width: 80%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -156,3 +158,25 @@
   font-weight: bold;
   text-shadow: 1px 0px 3px black;
 }
+
+
+  @media (max-width: 800px) {
+    .main{
+      height: 16rem;
+    }
+
+    .imagen_principal {
+      display: none;
+    }
+
+    .controles {
+      gap: 0;
+    }
+
+    .custom-dropdown {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+  }
