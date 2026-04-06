@@ -4,6 +4,7 @@
 
 .layout {
   width: 100%;
+  min-height: 100vh;
   display: grid;
   grid:
     "header" auto
@@ -157,6 +158,16 @@
   color: white;
   font-weight: bold;
   text-shadow: 1px 0px 3px black;
+}
+
+.footer {
+  color: white;
+  background: black;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 10px;
+
 }
 
 
