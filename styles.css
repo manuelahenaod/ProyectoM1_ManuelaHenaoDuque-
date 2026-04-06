@@ -1,6 +1,7 @@
 * {
     margin: 0;
-}
+    padding: 0;
+} 
 
 .layout {
   width: 100%;
@@ -11,16 +12,17 @@
     "main" 1fr
     "footer" auto
     / 1fr;
-  gap: 8px;
 }
 
-.header { 
+.header,.footer { 
     background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
+    margin: 0;
  }
 
 .logo_texto {
@@ -28,7 +30,6 @@
     color: white;
     font-size: xx-large;
     font-weight: bold;
-    margin: 0;
 }
 
 .logo {
@@ -37,12 +38,12 @@
 
 .main { 
     width: auto;
-    height: 13rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
+
  }
 
  .labels {
@@ -65,7 +66,7 @@
 }
 
 .imagen_principal {
-    width: 300px;
+    max-width: 300px;
     height: 200px;
     display: block;
 }
@@ -147,7 +148,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   margin-bottom: 20px;
   width: 100%;
   height: auto;
@@ -166,15 +166,6 @@
   text-shadow: 1px 0px 3px black;
 }
 
-.footer {
-  color: white;
-  background: black;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 15px;
-  padding: 10px;
-
-}
 
 #mensaje {
   position: fixed;
@@ -189,23 +180,27 @@
   transition: opacity 0.3s ease;
 }
 
-  @media (max-width: 800px) {
-    .main{
-      height: 16rem;
-    }
 
-    .imagen_principal {
-      display: none;
-    }
+  
+  @media (max-width: 1024px) {
 
-    .controles {
-      gap: 0;
-    }
+  .controles {
+    gap: 0;
+  } 
 
-    .custom-dropdown {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
+  .custom-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
   }
+
+  .main {
+    flex-direction: column;  
+    align-items: center;
+  }
+
+  #paleta {
+    margin-top: 20px;
+  }
+}
