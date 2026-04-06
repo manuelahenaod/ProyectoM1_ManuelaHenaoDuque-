@@ -58,6 +58,12 @@
 
 }
 
+.parrafo {
+  font-family: sans-serif ;
+  font-size: 15px;
+  text-align: center;
+}
+
 .imagen_principal {
     width: 300px;
     height: 200px;
@@ -141,7 +147,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 20px;
   width: 100%;
   height: auto;
@@ -170,6 +176,18 @@
 
 }
 
+#mensaje {
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
   @media (max-width: 800px) {
     .main{
